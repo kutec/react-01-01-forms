@@ -8,6 +8,8 @@ import FormReactInput from './forms/input/formReactInput';
 import FormNormalTextarea from './forms/textarea/formNormalTextarea';
 import FormReactTextarea from './forms/textarea/formReactTextarea';
 
+import MovieTicket from './forms/multiple/formMultipleInputs';
+
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +30,7 @@ class App extends Component {
         <FormNormalTextarea />
         <FormReactTextarea />
 
+        <MovieTicket />
       </div>
     );
   }
