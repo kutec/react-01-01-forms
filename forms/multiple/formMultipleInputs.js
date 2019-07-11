@@ -31,9 +31,9 @@ export default class MovieTicket extends Component {
   render() {
     return (
       <form>
+        <br />
+        <br />
         <p>MULTIPLE Inputs:</p>
-        <br />
-        <br />
         <label>
           Has Booked:
           <input
