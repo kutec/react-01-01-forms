@@ -5,6 +5,10 @@ import './style.css';
 import FormNormalInput from './forms/input/formNormalInput';
 import FormReactInput from './forms/input/formReactInput';
 
+import FormNormalTextarea from './forms/textarea/formNormalTextarea';
+import FormReactTextarea from './forms/textarea/formReactTextarea';
+
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,15 +20,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/** comments
-          <Hello name={this.state.name} />
-         */}
         <h1>React - {this.state.name}</h1>
 
         <FormNormalInput />
         <FormReactInput />
 
-        // 
+        <FormNormalTextarea />
+        <FormReactTextarea />
+
       </div>
     );
   }
