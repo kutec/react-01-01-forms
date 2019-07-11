@@ -1,23 +1,30 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
 
+import FormNormalInput from './forms/input/formNormalInput';
+import FormReactInput from './forms/input/formReactInput';
+
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      name: 'React'
+      name: 'Forms'
     };
   }
 
   render() {
     return (
       <div>
-        <Hello name={this.state.name} />
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+        {/** comments
+          <Hello name={this.state.name} />
+         */}
+        <h1>React - {this.state.name}</h1>
+
+        <FormNormalInput />
+        <FormReactInput />
+
+        // 
       </div>
     );
   }
